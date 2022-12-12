@@ -49,7 +49,16 @@
         </pre>
     </div>
 
-    <div class="p-2 small" th:text="'Name in security principal is  ' + ${userDetails.getName()}">name</div>
+
+    <div class="card">
+        <div class="card-body">
+            <h2>Claims from Spring Security Principal</h2>
+            <div class="row" th:each="claim: ${claims}">
+                <div class="col-sm-3" style="word-wrap:break-word;" th:text="${claim.key}"></div>
+                <div class="col-sm-9" style="word-wrap:break-word;" th:text="${claim.value}"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
