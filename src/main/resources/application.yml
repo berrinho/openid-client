@@ -7,17 +7,17 @@ spring:
       client:
         registration:
           joe-test-oidc-auth:
-            provider: open-athens-test
-            client-id: joetesting.net.oidc-app-v1.e017f170-82b3-46a3-ba21-e6f7dbe467af
-            client-secret: F3R5BFzFteWzyWAKJVm6wvb2k
+            provider: open-athens-dev
+            client-id: hobbitonlibrary.com.oidc-app-v1.766a9db9-31c3-48e3-a742-3c6576a06bdd
+            client-secret: MRQP6qpoh1i17YQM1N9fcXyyd
             authorization-grant-type: authorization_code
             redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
             scope: openid
         provider:
-          open-athens-test:
-            issuerUri: https://connect.test.openathens.net
-            authorization-uri: https://connect.test.openathens.net/oidc/auth
-            token-uri: https://connect.test.openathens.net/oidc/token
-            user-info-uri: https://connect.test.openathens.net/oidc/userinfo
+          open-athens-dev:
+            issuerUri: https://connect.dev.openathens.net
+            authorization-uri: https://connect.dev.openathens.net/oidc/auth
+            token-uri: https://connect.dev.openathens.net/oidc/token
+            user-info-uri: https://connect.dev.openathens.net/oidc/userinfo
 
 

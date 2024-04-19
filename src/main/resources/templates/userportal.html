@@ -19,8 +19,7 @@
             <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
         </ul>
         <ul class="nav">
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+            <li class="nav-item"><a href="/logout" class="nav-link link-dark px-2">Logout</a></li>
         </ul>
     </div>
 </nav>
@@ -53,10 +52,14 @@
     <div class="card">
         <div class="card-body">
             <h2>Claims from Spring Security Principal</h2>
-            <div class="row" th:each="claim: ${claims}">
+                <div class="row" th:each="claim: ${claims}">
                 <div class="col-sm-3" style="word-wrap:break-word;" th:text="${claim.key}"></div>
                 <div class="col-sm-9" style="word-wrap:break-word;" th:text="${claim.value}"></div>
             </div>
+            <div>sub (subject): Subject of the JWT (the user)</div>
+            <div>aud (audience): Recipient for which the JWT is intended</div>
+            <div>iss (issuer): Issuer of the JWT</div>
+            <div>nonce - String value used to associate a Client session with an ID Token, and to mitigate replay attacks.</div>
         </div>
     </div>
 </div>
