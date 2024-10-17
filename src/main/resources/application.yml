@@ -1,6 +1,8 @@
 logging:
   level:
     root: DEBUG
+server:
+  port: 8074
 spring:
   security:
     oauth2:
@@ -8,8 +10,8 @@ spring:
         registration:
           joe-test-oidc-auth:
             provider: open-athens-dev
-            client-id: hobbitonlibrary.com.oidc-app-v1.766a9db9-31c3-48e3-a742-3c6576a06bdd
-            client-secret: MRQP6qpoh1i17YQM1N9fcXyyd
+            client-id: hobbitonlibrary.com.oidc-app-v1.50bd6294-0063-4d4a-a1a1-47d691c67e40
+            client-secret: gc7uJapV7lrirmRljJUcHEMDv
             authorization-grant-type: authorization_code
             redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
             scope: openid
